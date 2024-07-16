@@ -7,7 +7,7 @@ import { mergePDFs } from "../src";
 
 describe("mergePDFs function", () => {
 	it("merging two PDF's Named Destination", async () => {
-		const data = await mergePDFs(["./__test__/pdfs/book.pdf", "./__test__/pdfs/food.pdf"]);
+		const data = await mergePDFs(["./__test__/pdfs/book.pdf", "./__test__/pdfs/food.pdf"], [], "");
 		const parser = new Parser(data);
 		parser.parse();
 		const catalog = parser.trailer.get("Root").object.properties;
