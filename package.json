@@ -1,5 +1,5 @@
 {
-	"name": "@condorhero/merge-pdfs",
+	"name": "@whamcloud-ddn/merge-pdfs",
 	"type": "module",
 	"version": "0.0.7",
 	"description": "Merging PDF (with Outline).",
