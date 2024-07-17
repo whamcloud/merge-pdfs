@@ -1,7 +1,7 @@
 {
 	"name": "@whamcloud-ddn/merge-pdfs",
 	"type": "module",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Merging PDF (with Outline).",
 	"author": "CondorHero",
 	"license": "MIT",
@@ -48,7 +48,7 @@
 		"node": ">=18.5.0"
 	},
 	"scripts": {
-		"prepublishOnly": "nr build",
+		"prepublishOnly": "npm run build",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"dev": "esno ./src/index.ts",
