@@ -47,7 +47,7 @@ export async function mergePDFs(entry: string[], urls: string[], base_url: Strin
 	 * @see https://github.com/pyodide/pyodide/issues/3246#issuecomment-1312210155
 	 * You need to prefix the path with emfs: or it will be treated as a url
 	*/
-	await micropip.install(`emfs:${MOUNT_DIR}/pyodide/pypdf-4.3.0-py3-none-any.whl`);
+	await micropip.install(`emfs:${MOUNT_DIR}/pyodide/pypdf-4.2.0-py3-none-any.whl`);
 
 	const tempFileNameArr: string[] = [];
 	absolutePathArr.forEach((filePath) => {
